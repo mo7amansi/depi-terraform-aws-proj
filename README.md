@@ -33,18 +33,32 @@ The main objective of this project is to automate the deployment of a web applic
 - **Web Server**: Nginx
 
 ## Setup Instructions
-1. **Clone the Repository**:
+1. Create "depi-bucket-1" S3 Bucket from Console
+
+<div align="center">
+    <img src="https://drive.google.com/uc?id=1QTH-JX1AewUnnXZVTPIolXh-XQRKuB54" alt="S3 Bucket" />
+    <br><br>
+</div>
+
+2. Create "depi-state-lock" DynamoDB Table
+
+<div align="center">
+    <img src="https://drive.google.com/uc?id=1NKIn7JHHqWY0LEl3lJLPd0LTWAZI1qFX" alt="DynamoDB Table" />
+    <br><br>
+</div>
+
+3. **Clone the Repository**:
    
    ```bash
    git clone https://github.com/mo7amansi/depi-terraform-aws-proj.git
    cd depi-terraform-aws-proj
 
-2. **Initialize Terraform**:
+4. **Initialize Terraform**:
    
    ```bash
    terraform init
 
-3. **Apply the Configuration**:
+5. **Apply the Configuration**:
    
    ```bash
    terraform apply
