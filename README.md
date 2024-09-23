@@ -54,7 +54,7 @@ Once the deployment is complete, access the application via the DNS name of the 
 The web application will display a message with the public IP of the instance.
 " check my screenshots directory ^_^ "
 
-## Final Part: Clean up 💣
+## Final Part: Clean up💣
 
    ```bash
    terraform destroy
