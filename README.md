@@ -1,7 +1,7 @@
-# AWS Auto Scaling Web Application with Load Balancing Using Terraform
+# AWS Auto Scaling Infrastructure with Load Balancing Using Terraform
 
 ## Overview 
-This project demonstrates how to create a highly available web application on AWS using Terraform. It leverages AWS services like VPC, EC2, Auto Scaling Group, and Application Load Balancer to provide a scalable architecture capable of handling varying traffic loads.
+This project demonstrates how to create a highly available Infrastructure on AWS using Terraform. It leverages AWS services like VPC, EC2, Auto Scaling Group, and Application Load Balancer to provide a scalable architecture capable of handling varying traffic loads.
 
 ## Table of Contents
 - [Objective](#objective)
@@ -21,14 +21,14 @@ The main objective of this project is to automate the deployment of a web applic
     <br><br>
 </div>
 
-
+- A **S3 Bucket** For storing Terraform state files.
 - A **Virtual Private Cloud (VPC)** is created with three public subnets.
 - An **Internet Gateway (IGW)** provides outbound internet access.
 - An **Application Load Balancer (ALB)** distributes incoming traffic across EC2 instances.
 - An **Auto Scaling Group (ASG)** automatically scales EC2 instances based on traffic load.
 
 ## Technologies Used
-- **AWS Services**: VPC, EC2, Auto Scaling Group, Application Load Balancer
+- **AWS Services**: S3 Bucket, VPC, EC2, Auto Scaling Group, Application Load Balancer
 - **Infrastructure as Code**: Terraform
 - **Web Server**: Nginx
 
@@ -53,12 +53,16 @@ The main objective of this project is to automate the deployment of a web applic
    git clone https://github.com/mo7amansi/depi-terraform-aws-proj.git
    cd depi-terraform-aws-proj
 
-4. **Initialize Terraform**:
+4. **Update Variables File**:
+    <p></p>
+   Update the variables in variables.tf file to match your needed.
+   
+5. **Initialize Terraform**:
    
    ```bash
    terraform init
 
-5. **Apply the Configuration**:
+6. **Apply the Configuration**:
    
    ```bash
    terraform apply
